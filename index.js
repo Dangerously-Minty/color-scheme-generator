@@ -14,7 +14,10 @@ const hex = document.getElementById("hex")
     .then(res => res.json())
     .then(data=>{
         const htmlData = data.colors.map(color=>{ return `
-            <div class="color" style="background-color:${color.hex.value};"><span class="color-hex">${color.hex.value}</span></div>
+            <div class="color">
+                <div style="width:110px;height:415px;background-color:${color.hex.value};"></div>
+                <div class="color-hex">${color.hex.value}</div>
+            </div>
             `}).join("")
         document.getElementById("colors").innerHTML = htmlData
         })
