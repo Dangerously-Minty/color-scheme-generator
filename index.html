@@ -1,0 +1,32 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>Color Scheme Generator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+    <form id="color-form">
+        <input type="color" class="hex" id="hex" name="hex" value="#331CAB">
+        <select id="mode" class="mode" name="mode">
+            <option value="monochrome">Monochrome</option>
+            <option value="monochrome-dark">Monochrome-Dark</option>
+            <option value="monochrome-light">Monochrome-Light</option>
+            <option value="analogic">Analogic</option>
+            <option value="complement">Complement</option>
+            <option value="analogic-complement">Analogic-Complement</option>
+            <option value="triad">Triad</option>
+            <option value="quad">Quad</option>
+        </select>
+    </form>
+    </header>
+        <main>
+            <div class="color-scheme" id="colors">
+                <!-- Generated color scheme will be displayed here -->
+            </div>
+</main>
+</div>
+    <script src="index.js"></script>  
+</body>
+</html>
